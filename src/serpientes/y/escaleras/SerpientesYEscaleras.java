@@ -16,9 +16,9 @@ public class SerpientesYEscaleras {
     private tablero board;
     private Dado dice;
 
-    public SerpientesYEscaleras(String playerName) {
+    public SerpientesYEscaleras(String playerName,String playerName2) {
         player = new Jugador(playerName);
-        player2 = new Jugador(playerName);
+        player2 = new Jugador(playerName2);
         board = new tablero(100);
         dice = new Dado();
     }
@@ -54,7 +54,7 @@ public class SerpientesYEscaleras {
     }
 
     public static void main(String[] args) {
-        SerpientesYEscaleras game = new SerpientesYEscaleras("Jugador 1", "Jugador 2");
+        SerpientesYEscaleras game = new SerpientesYEscaleras("Jugador", "Bot");
         game.start();
     }
 }
